@@ -1,1 +1,17 @@
-# challenge
+executando as apis
+
+requisitos:
+ - ter o docker instalado na maquina
+ 
+Executando OS SERVIÇOS NO DOCKER:
+
+1. CONSTRUINDO IMAGEM DOS SERVIÇOS:
+
+	- docker build -t cpf-validator
+	- docker build -t api-people-registration
+
+2. EXECUTANDO A IMAGEM DOCKER DENTRO DO CONTAINER
+
+  - docker network create teste_local
+  - docker run -p 8081:8081 --name api-people-registration --network rede_local api-people-registration
+  - comando docker: docker run -p 8080:8080 --name cpf-validator --network rede_local cpf-validator
