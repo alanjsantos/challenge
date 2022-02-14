@@ -1,0 +1,24 @@
+# Compiled source #
+###################
+*.class
+.classpath
+
+# Packages #
+############
+*.png
+*.iml
+*.ipr
+*.iws
+.gradle
+.settings
+.idea
+build
+bin
+target
+release
+
+# Logs and databases #
+######################
+*.log
+/catalina.*/
+
